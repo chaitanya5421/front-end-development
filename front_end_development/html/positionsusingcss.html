@@ -1,0 +1,54 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<title>creating layout using GRID</title>
+		<style>
+			.absolutewithoutparent{
+				height:100px;
+				background-color:brown;
+				position:absolute;
+				top:100px;
+			}
+			
+			section{
+				position:relative;
+				
+			}
+			
+			.absolutewithparent{
+				height:100px;
+				background-color:orange;
+				position:absolute;
+				top:0px;
+			}
+			
+			.demo{
+				height:100px;
+				background-color:green;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		<!-- 
+				positions
+					- static
+					- relative 
+					- absolute
+					- fixed
+					- sticky
+		
+		-->
+		
+		<!-- without parent -->
+		<div class="demo"></div>
+		<div class="absolutewithoutparent">absolutewithoutparent</div>
+		
+		<section>
+			<div class="absolutewithparent">absolutewithparent<div>
+		</section>
+		
+		
+	</body>
+</html>

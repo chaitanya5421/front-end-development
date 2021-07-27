@@ -1,0 +1,61 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<title>Combinator selectors  in CSS</title>
+		<style>
+			ul li{
+					border:2px solid yellow;
+					margin-bottom:10px;
+			}
+			
+			.para1 ~ h2{
+				background-color:green;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<!--
+			there are four selectors 
+				- Descendent Selector(space)
+				- child selector(>)
+				- Adjacent Sibling Selector(+)
+				- General sibling Selector(~)
+		-->
+		
+		<section>
+			<div>Combinator selectors<div>
+			<div>Combinator selectors<div>
+			<div>Combinator selectors<div>
+		<header>
+				<aside>
+					<div>Combinator selectors<div>
+					</aside>
+		</header>
+		</section>
+		
+		
+		<div>
+			<h2>This is child Selector </h2>
+			<h2>This is child Selector </h2>
+			<section>
+			<h2>This is child Selector </h2>
+			</section>
+		</div>
+		
+				<h2>This is child Selector </h2>
+		<p class="para1">This is para</p>
+		<h2>This is child Selector </h2>
+		<h2>This is child Selector </h2>
+		<h2>This is child Selector </h2>
+		<h2>This is child Selector </h2>
+		
+		
+		<ul>
+			<li>HTML</li>
+			<li>Css</li>
+			<li>Javascript</li>
+			<li>React</li>
+		</ul>
+	</body>
+</html>

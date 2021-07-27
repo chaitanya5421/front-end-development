@@ -1,0 +1,71 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<title>Media queries using css</title>
+		<style>
+			.img1{
+				width:33%;
+				height:auto;
+			}
+			.img2{
+				width:33%;
+				height:auto;
+			}
+			
+			.img3{
+				width:33%;
+				height:auto;
+			}
+			
+			@media only screen and (max-width: 600px) {
+					.img1 {
+						width:100%;
+						height:auto;
+						border:2px solid red;
+					}
+					.img2 {
+						width:100%;
+						height:auto;
+						border:2px solid red;
+					}
+					.img3 {
+						width:100%;
+						height:auto;
+						border:2px solid red;
+					}
+					
+					
+			}	
+			
+			@media screen and (max-width: 900px) and (min-width: 600px)  {
+					.img1 {
+						width:50%;
+						height:auto;
+						border:2px solid green;
+					}
+					.img2 {
+						width:50%;
+						height:auto;
+						border:2px solid green;
+					}
+					.img3 {
+						width:50%;
+						height:auto;
+						border:2px solid green;
+					}
+			}	
+			
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		<div>
+			<img src="images/01.jpg" class="img1" alt="laptop" />
+			<img src="images/02.jpg" class="img2" alt="laptop" />
+			<img src="images/laptop.jpg" class="img3" alt="laptop" />
+		
+		</div>
+	</body>
+</html>

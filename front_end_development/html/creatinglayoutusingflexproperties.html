@@ -1,0 +1,81 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<title>creating layout using Flex</title>
+		<style>
+			
+			
+			section{
+				display:flex;
+				border:1px solid blue;
+				padding:10px;
+				flex-wrap:wrap;
+				flex-direction:row;
+				height:300px;
+				
+				align-items:flex-end;
+			}
+			
+			section div{
+				border:1px solid green;
+				height:100px;
+				width:300px;
+			}
+			
+			div:first-child{
+				background-color:yellow;
+				width:100px;
+				
+			}
+			
+			div:last-child{
+				background-color:blue;
+				width:100px;
+				align-self:center;
+				
+			}
+			
+			div:nth-child(1){
+				flex-shrink:1;
+				align-self:flex-start;
+			}
+			
+			div:nth-child(2){
+				flex-shrink:1;
+				align-self:center;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+				<!--
+						flex container properties
+							- flex-direction
+							- flex-wrap
+							- flex-flow
+							- align-items
+							- justify-content
+							
+						flex item properties
+							- flex
+							- order 
+							- flex-shrink
+							- align-self
+							- flex-grow
+								
+				-->
+		
+	
+	
+		<section>
+			<div>HTML</div>
+			<div>CSS</div>
+			<div>Javascript</div>
+			<div>Reactjs</div>
+			
+		
+		</section>
+	</body>
+</html>

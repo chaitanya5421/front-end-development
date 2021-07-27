@@ -1,0 +1,133 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<title>pseudo selectors in CSS</title>
+		<style>
+			.list-item:first-child{
+				color:yellow;
+				border:2px solid blue;
+			}
+			
+			ol li:last-child{
+				color:green;
+				border:2px solid blue;
+				background-color:red;
+			}
+			
+			ol li:nth-child(3){
+				color:orange;
+				border:2px solid green;
+				font-size:20px;
+			}
+			
+			ul li:nth-child(2n){
+				background-color:yellow;
+			}
+			
+			ul li:nth-child(2n+1){
+				background-color:green;
+			}
+			
+			.headhover:hover{
+				color:yellow;
+				background-color:green;
+				width:100px;
+				height:100px;
+			}
+			
+			a:link{
+				color:red;
+			}
+			
+			a:active{
+				color:blue;
+			}
+			
+			a:visited{
+				color:orange;
+			}
+			
+			p::first-line{
+				color:orange;
+				font-size:20px;
+			}
+			
+			p::first-letter{
+				color:red;
+			}
+			
+			p::selection{
+				color:gold;
+			}
+			
+			p::before{
+				content:"********"
+			}
+			
+			p::after{
+				content:"********"
+			}
+		</style>
+		
+	</head>
+	<body>
+		<!--
+			pseudo selectors
+					pseudo selectors allows developer to styleas per "their state" inside DOM.
+			
+			pseudo selectors is classified into two types
+				pseudo class selectors(selector : state of an element)
+				pseudo element selector(selector :: state of an element)
+				
+				pseudo selectors list for class 
+					- :first-child
+					- :last-child
+					- :nth-child(n)
+					- :nth-child(2n)/:nth-child(even)
+					- :nth-child(2n+1)/:nth-child(odd)
+				
+				Anchor has four states internally such aside
+					:hover
+					a:link
+					a:active
+					a:focus
+					a:visited
+					
+					
+				pseudo Element Selector
+					it selects an element /part of an element with adding either class or id selector
+			-->
+		
+		<ol>
+			<li class="list-item">HTML</li>
+			<li>Css</li>
+			<li>Javascript</li>
+			<li>ReactJs</li>
+		</ol>
+		
+		
+		<ul>
+			<li>HTML</li>
+			<li>Css</li>
+			<li>Javascript</li>
+			<li>ReactJs</li>
+			<li>bootstrap</li>
+			<li>jquery</li>
+		</ul>
+	
+	<h2 class="headhover">This is for hover effect</h2>
+	
+	<a href="#" target="_blank">This is a link</a>
+	
+	
+	<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+		when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+		It has survived not only five centuries, but also the leap into electronic typesetting,
+		remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+		sheets containing Lorem Ipsum passages,
+		and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</p>
+	</body>
+</html>

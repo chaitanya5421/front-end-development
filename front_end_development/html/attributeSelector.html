@@ -1,0 +1,72 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<title>Atribute Selector in CSS</title>
+		<link rel="stylesheet"  href="styles.css">
+		<style>
+			[href]{
+				border:2px solid red;
+				background-color:orange;
+				display:block;
+			}
+			
+			[class]{
+				border:2px solid red;
+				background-color:yellow;
+				display:block;
+			}
+			
+			[src="Images/laptop.jpg"]{
+				width:300px;
+				height:300px;
+				border:1px solid red;
+			}
+			
+			[type^="te"]{
+				width:200px;
+				background-color:grey;
+				
+			}
+			
+			[alt$="top"]{
+				border-radius:50px;
+			}
+			
+			[target*="lan"]{
+				font-size:50px;
+				}
+			
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		<!--
+			Types 
+			
+				has Attribute 
+					- [href] - it selects elements which has 'href' as a attribute
+				Attr value Equals to 
+					- [src="Images/laptop.jpg"] 
+				
+				Attr value starts with
+					- [type^="text"]
+					
+				Attr value ends with
+					- [alt$="top"]
+					
+				Attr value contains
+					-[target*="lan"]
+		-->
+		
+		<h1><a href="#" target="_blank">This is heading</a></h1>
+		<h2 class="head2">This is head2</h2>
+		
+		<img src="Images/laptop.jpg" alt="laptop"/>
+		
+		<label>First Name</label>
+		<input  type="text"/>
+		
+	</body>
+</html>

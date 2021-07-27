@@ -1,0 +1,42 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<title>creating layout using GRID</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			
+				.container{
+					border:1px solid green;
+					display:grid;
+					grid-template-columns:repeat(3,1fr);
+					grid-template-rows:100px 200px;
+					grid-auto-rows:50px;
+					grid-row-gap:30px;
+					grid-column-gap:10px;
+				} 
+				
+				.item1{background-color:yellow;}
+				.item2{background-color:blue;}
+				.item3{background-color:brown;}
+				.item4{background-color:orange;}
+				.item5{background-color:pink;}
+				.item6{background-color:red;}
+				.item7{background-color:grey;}
+				
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<section class="container">
+			<div class="grid-item item1">HTML</div>
+			<div class="grid-item item2">CSS</div>
+			<div class="grid-item item3">JAVASCRIPT</div>
+			<div class="grid-item item4">REACTJS</div>
+			<div class="grid-item item5">Ajax</div>
+			<div class="grid-item item6">jquery</div>
+			<div class="grid-item item7">Bootstrap<i class="fa fa-bell-slash-o" style="font-size:30px;color:blue"></i></div>
+		</section>
+	</body>
+</html>

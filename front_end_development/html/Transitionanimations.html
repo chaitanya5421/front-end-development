@@ -1,0 +1,52 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transitions in css</title>
+		<style>
+		div{
+			border:5px solid green;
+			padding:20px;
+			
+			--webkit-transition-property:border;
+			--webkit-transition-delay:2s;
+			--webkit-transition-duration:5s;
+			--webkit-transition-timing-function:linear;
+			
+			
+			transition-property:border,background-color;
+			transition-delay:2s;
+			transition-duration:5s;
+			transition-timing-function:linear;
+		}
+		
+		div:hover{
+			border:10px solid blue;
+			background-color:yellow;
+		}
+		
+		
+				
+		</style>
+		
+	</head>
+	
+	<body>
+		<!--
+			Animations
+				- Transform
+					-translate
+					
+				- Transition 
+				- Animation
+				
+				
+			--webkit => crome,safari
+			-o- => opera
+			-moz- => firefox
+			-ms- =>IE,EDGE
+			
+		-->
+		
+		<div></div>
+	</body>
+</html>

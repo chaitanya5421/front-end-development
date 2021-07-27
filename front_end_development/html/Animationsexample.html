@@ -1,0 +1,44 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transitions in css</title>
+		<style>
+			div img{
+				width:200px;
+				height:200px;
+				border-radius:50%;
+				
+				animation-name:rolling;
+				animation-delay:2s;
+				animation-duration:5s;
+				animation-timing-function:all;
+				animation-iteration-count:infinite;
+			}
+			
+			@keyframes rolling{
+				0%{
+					transform:rotate(0deg)scale(1);
+		
+				}
+				100%{
+					transform:rotate(350deg) scale(0.5);
+				}
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		<!--
+			Animations
+				
+				
+		
+		-->
+		
+		<div>
+			<img src="images/tajmahal.jpg" />
+		</div>
+	</body>
+</html>

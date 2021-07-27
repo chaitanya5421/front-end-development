@@ -1,0 +1,60 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<title>Animations in css</title>
+		<style>
+			.divcommon{
+				border:1px solid red;
+				padding:20px;
+				margin-bottom:20px;
+			}
+			.div1{
+				background-color:blue;
+				
+			}
+			
+			.div1:hover{
+				background-color:green;
+				transform:translate(100px,10px);
+			}
+			
+			
+			.div2{
+				background-color:yellow;
+			}
+			.div2:hover{
+				background-color:orange;
+				transform:scale(0.8,2.4);
+			}
+			
+			div:nth-child(4){
+						background-color:grey;
+						transform:skew(2deg,5deg);
+			}
+			
+			
+	
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		<!--
+			Animations
+				- Transform
+					-translate
+					- scale
+					- skew
+					- rotate
+					
+				- Transition 
+				- Animation
+		-->
+		<h2>Transform</h2>
+		<div class="divcommon div1">Translate</div>
+		<div class="divcommon div2">scale</div>
+		<div class="divcommon div3">skew</div>
+		<div class="divcommon div4">ReactJs</div>
+	</body>
+</html>
